@@ -1,0 +1,223 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* all calculation are done by taking base as 10px, by changing the root font size */
+body{
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    color: #444;
+    background-color: rgb(245,247,255);
+    line-height: 1.2;
+}
+
+.strip{
+    width: 100vw;
+    padding: 1.6rem 1.7rem;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.square32{
+    height: 32px;
+    width: 32px;
+}
+.square40{
+    height: 40px;
+    width: 40px;
+}
+.square60{
+    height: 60px;
+    width: 60px;
+}
+.square80{
+    height: 80px;
+    width: 80px;
+}
+.image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.9s;
+}
+.arrow-nav{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 98%;
+    /* gap: 660px; */
+}
+.arrow{
+    border: none;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.dots-nav{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dot, .bdy-dot{
+    height: 6px;
+    width: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.active,
+.dot:hover,
+.bdy-dot:hover{
+    border: 1px solid RGB(71 71 161);
+    background-color: RGB(71 71 161);
+}
+
+.arrow:hover,
+.dot:hover{
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+button{
+    color: inherit;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 17px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid;
+    transition: all 0.3s;
+}
+button:hover{
+    cursor: pointer;
+    color: #4747a1;
+}
+a:link,
+a:active{
+    font-family: inherit;
+    text-decoration: none;
+    color: #fff;
+}
+a:hover,
+a:visited{
+    color: #fff;
+}
+/* margins */
+.mrg-bottom-very-small{
+    margin-bottom: 10px;
+}
+.mrg-bottom-small{
+    margin-bottom: 15px;
+}
+.mrg-bottom-large{
+    margin-bottom: 18px;
+}
+
+/* -------------------------------------------------------------------------------------*/
+/* grids */
+.grid{
+    display: grid;
+    gap: 15px;
+}
+.grid-2-cols{
+    grid-template-columns: repeat(2, 0.5fr);
+}
+.grid-7-3-cols{
+    grid-template-columns: 70fr 30fr;
+}
+.grid-3-cols{
+    grid-template-columns: repeat(3, 0.33fr);
+}
+.grid-4-cols{
+    grid-template-columns: repeat(4, 0.25fr);
+}
+/* ------------------------------------------------------------------------------------ */
+/* CARDS */
+.card{
+    border-radius: 0.9rem;
+    box-shadow: #aaaaaade 0px 0px 2px 2px;
+    overflow: hidden;
+    transition: all 0.3s;
+    transition-timing-function: ease-in;
+    position: relative;
+}
+
+.card-body{
+    padding: 0.8rem 1rem;
+}
+.card-sub-body{
+    padding: 0 0.6rem;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.imp-text{
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+
+/* icons */
+.icon-box{
+    padding: 8px;
+    border: none;
+}
+
+.icon-box:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-normal{
+    font-size: 24px;
+}
+
+.icon-big{
+    font-size: 32px;
+}
+
+.icon-very-big{
+    font-size: 48px;
+}
+
+.footer{
+    background-color: black;
+    color: #fff;
+}

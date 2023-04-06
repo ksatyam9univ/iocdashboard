@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/commonstyle.css">
+    <link rel="stylesheet" href="css/particularstyle.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Universal and Weather Aviation</title>
+</head>
+
+<body>
+    <header class="strip main-header mrg-bottom-small shadow-bottom">
+        <!-- logo -->
+        <div class="logo-box">
+            <a href="#">
+                <img src="image/logo/logoUniversal.png" alt="" class="image logo">
+            </a>
+        </div>
+
+        <!-- my profile -->
+        <div class="my-profile" id="my-profile">
+            <div class="notification">
+                <ion-icon class="icon icon-normal" name="notifications"></ion-icon>
+            </div>
+            <div class="my-profileImage square40" id="my-profileImage">
+                <img src="image/myprofile/myimage.png" alt="" class="myprofileImage image" id="myProfileImage">
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container">
+        <h2 class="welcome mrg-bottom-small">Welcome <span id="myName">Satyam</span></h2>
+
+        <section class="section-1 grid grid-7-3-cols mrg-bottom-large">
+            <div class="image-card card">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 5</div>
+                        <div class="info-image" id="info-image">
+                            <img src="image/imagecard/women-aviation.jpg" class="image" alt="">
+                        </div>
+                        <p class="text" id="info-card">2023 Women in Aviation International Conference.</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 5</div>
+                        <div class="info-image" id="info-image">
+                            <img src="image/imagecard/industryevents.jpg" class="image" alt="">
+                        </div>
+                        <p class="text" id="info-card">In the late 1970s, Universal established its first international ground handling locations, which would later become the Universal Aviation® worldwide ground support network.</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 5</div>
+                        <div class="info-image" id="info-image">
+                            <img src="image/imagecard/our-brand-1200n.jpg" class="image" alt="">
+                        </div>
+                        <p class="text" id="info-card">Often called just “Universal” or “UV”, Universal Weather and Aviation, Inc. is the name of our parent company and is best known for providing complete trip support services for business aviation.</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <div class="info-image" id="info-image">
+                            <img src="image/imagecard/paris-team.jpg" class="image" alt="">
+                        </div>
+                        <p class="text" id="info-card">Plans change on every trip, and each day you face tremendous stress and pressure to keep the guarantees you make to your organization. That’s why it’s so important to have a partner with the global resources necessary to help you overcome any unexpected challenges.</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        <div class="info-image" id="info-image">
+                            <img src="image/imagecard/Universal-Aviation-Spain.jpg" class="image" alt="">
+                        </div>
+                        <p class="text" id="info-card">Each and every day, the people of Universal prove they are our greatest asset. And with 1,700 employees and thousands of trusted suppliers around the world, partnering with Universal means you have access to a comprehensive and ever-growing global community of business aviation professionals.</p>
+                    </div>
+                    
+                </div>
+
+                <!-- arrow slider -->
+                <div class="arrow-nav">
+                    <div class="arrow arrow-left prev" onclick="plusSlides(-1)">
+                        <ion-icon class="icon icon-big" name="chevron-back"></ion-icon>
+                    </div>
+                    <div class="arrow arrow-right next" onclick="plusSlides(1)">
+                        <ion-icon class= "icon icon-big" name="chevron-forward"></ion-icon>
+                    </div>
+                </div>
+
+                <!-- auto -->
+                <div class="dots-box">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                </div>
+                
+
+            </div>
+
+            <div class="birthday-card card card-body">
+                <!-- title -->
+                <p class="card-title">Happy Birthday</p>
+
+                <!-- info -->
+                <div class="slideshow-container">
+                    <div class="birthday-card-info bdy-Slides fade">
+                        <div class="profile-box square60">
+                            <img src="image/profilebirthday/pro4-modified.png" class="image" alt="">
+                        </div>
+                        <div class="birthday-card-txt">
+                            <p class="name" id="name">Ravi Kakar</p>
+                            <p><span class="rank-title">Rank-</span> <span class="rank" id="rank">Application
+                                    Developer</span></p>
+                            <p><span class="department-title">Department-</span> <span class="rank" id="rank">IT</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- <div class=" birthday-card-info bdy-Slides fade">
+                        <div class="profile-box square60">
+                            <img src="image/profilebirthday/pro2-modified.png" class="image" alt="">
+                        </div>
+                        <div class="birthday-card-txt">
+                            <p class="name" id="name">Kundan Kumar</p>
+                            <p><span class="rank-title">Rank-</span> <span class="rank" id="rank">Backend Developer</span></p>
+                            <p><span class="department-title">Department-</span> <span class="rank" id="rank">IT</span></p>
+                        </div>
+                    </div>
+
+                    <div class=" birthday-card-info bdy-Slides fade">
+                        <div class="profile-box square60">
+                            <img src="image/profilebirthday/pro1-modified.png" class="image" alt="">
+                        </div>
+                        <div class="birthday-card-txt">
+                            <p class="name" id="name">Sujata Sinha</p>
+                            <p><span class="rank-title">Rank-</span> <span class="rank" id="rank">Data Analyst</span></p>
+                            <p><span class="department-title">Department-</span> <span class="rank" id="rank">IT</span></p>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- dot scroll -->
+                <div class="bdy-dots-box">
+                    <span class="bdy-dot" onclick="bdyCurrentSlide(1)"></span> 
+                    <span class="bdy-dot" onclick="bdyCurrentSlide(2)"></span> 
+                    <span class="bdy-dot" onclick="bdyCurrentSlide(3)"></span>
+                </div>
+
+                <!-- gif -->
+                <div class="gif-img-box square60">
+                    <img class="gif-image" src="image/profilebirthday/birthdaygif.gif" alt="birthday gif">
+                </div>
+
+                <!-- button -->
+                <div class="send-wises">
+                    <p>send wishes</p>
+                </div>
+                <!-- modal -->
+
+            </div>
+
+            <div class="link-list-card card card-body">
+                <p class="card-title">Important links</p>
+                <div class="card-sub-body">
+                    <ul>
+                        <li class="imp-link-item">
+                            <a href="" class="list-item">Asset management</a>
+                        </li>
+                        <li class="imp-link-item">
+                            <a href="" class="list-item">HR Portal</a>
+                        </li>
+                        <li class="imp-link-item">
+                            <a href="" class="list-item">CAPPS</a>
+                        </li>
+                        <li class="imp-link-item">
+                            <a href="" class="list-item">Help Desk</a>
+                        </li>
+                        <li class="imp-link-item">
+                            <span id="myBtn" class="cursor list-item">Woman- Helpline</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-2 grid grid-4-cols mrg-bottom-large">
+            <div class="open-position-card card card-body">
+                <p class="card-title">Open position</p>
+                <div class="card-sub-body">
+                    <ul class="open-position-list">
+                        <li class="open-position-list-item">
+                            <span class="position" id="position">Application Developer</span>
+                        </li>
+                        <li class="open-position-list-item">
+                            <span class="position" id="position">Data Analyst</span>
+                        </li>
+                        <li class="open-position-list-item">
+                            <span class="position" id="position">Senior Backend Developer</span>
+                        </li>
+                        <li class="open-position-list-item">
+                            <span class="position" id="position">Senior Frontend Developer</span>
+                        </li>
+                        <li class="open-position-list-item">
+                            <span class="position" id="position">AR Receivable</span>
+                        </li>
+                    </ul>
+                    <button class="see-more">See more</button>
+                    <a class="refer-friend" href="">Refer your friend</a>
+                </div>
+            </div>
+
+            <div class="appreciation-card card card-body">
+                <p class="card-title">Appreciation</p>
+                <div class="card-sub-body appreciation-card-body">
+                    <div class="profile-image-box square60">
+                        <img src="image/profileappreciation/pro5-modified.png" alt="" class="profile-image image">
+                    </div>
+                    <div class="profile-data" style="text-align: center;">
+                        <p>
+                            <sapn class="name" id="appreciationName">Ashwin Raj</sapn>
+                        </p>
+                        <p>
+                            <span class="rank-title">Rank-</span>
+                            <sapn id="appreciation-rank">Application Developer</sapn>
+                        </p>
+                        <p>
+                            <span class="department-title">Department-</span>
+                            <sapn id="appreciation-department">IT</sapn>
+                        </p>
+                    </div>
+        
+                    <button>Proceed</button>
+                </div>
+            </div>
+
+            <div class="holyday-card card card-body">
+                <p class="card-title">Holidays</p>
+                <div class="card-sub-body">
+                    <ul class="holyday-list">
+                        <li class="holiday-list-item">
+                            <span class="holiday-list-item-name">Good Friday</span>
+                            <span class="holiday-list-item-date">14 Apr</span>
+                        </li>
+                        <li class="holiday-list-item">
+                            <span class="holiday-list-item-name">Amedkar Jayanti</span>
+                            <span class="holiday-list-item-date">14 Apr</span>
+                        </li>
+                        <li class="holiday-list-item">
+                            <span class="holiday-list-item-name">Independence Day</span>
+                            <span class="holiday-list-item-date">15 Aug</span>
+                        </li>
+                        <li class="holiday-list-item">
+                            <span class="holiday-list-item-name">Ganesh Chaurthi</span>
+                            <span class="holiday-list-item-date">19 Sep</span>
+                        </li>
+                        <li class="holiday-list-item">
+                            <span class="holiday-list-item-name">Gandhi Jayanti</span>
+                            <span class="holiday-list-item-date">02 Oct</span>
+                        </li>
+                        <li class="holiday-list-item">
+                            <span class="holiday-list-item-name">Diwali</span>
+                            <span class="holiday-list-item-date">12 Nov</span>
+                        </li>
+                        <li class="holiday-list-item">
+                            <span class="holiday-list-item-name">Christmas Day</span>
+                            <span class="holiday-list-item-date">25 Dec</span>
+                        </li>
+                    </ul>
+                    <button>See more</button>
+                </div>
+            </div>
+
+            <div class="faq-card card card-body">
+                <ion-icon class="icon icon-very-big" style="color: yellow;" name="bulb"></ion-icon>
+                <p class="imp-text">FAQs</p>
+                <button data-modal-target="#modal-faq">Open FAQs</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="strip final-footer">
+        <div class="copyRight">copyright &copy; 2023 Universal Weather & Aviation Inc.</div>
+        <div class="social-media-icon-list">
+            <a href="#" class="social-media-icon"><ion-icon class="icon icon-normal" name="logo-facebook"></ion-icon></a>
+            <a href="#" class="social-media-icon"><ion-icon class="icon icon-normal" name="logo-twitter"></ion-icon></a>
+            <a href="#" class="social-media-icon"><ion-icon class="icon icon-normal" name="logo-instagram"></ion-icon></a>
+            <a href="#" class="social-media-icon"><ion-icon class="icon icon-normal" name="logo-youtube"></ion-icon></a>
+        </div>
+    </footer>
+
+    <div id="myModal" class="woman">
+
+        <!-- Modal content -->
+        <div class="modal-contentxt">
+          <span class="close">&times;</span>
+          <div>
+                <p class="card-title">Woman Helpline</p>
+                <div style="padding: 20px;">
+                    <img src="image/womanhelpline.png" style="width: 100%; height: auto;" alt=""/>
+                </div>
+            
+          </div>
+        </div>
+        
+      
+    </div>
+
+    <script>
+
+        // modals
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+        // auto scroll
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";    
+        }
+        
+        slideIndex++;
+        
+        if (slideIndex > slides.length) {slideIndex = 1}    
+           
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+
+        // birth day auto scroll
+        // let bdyIndex = 0;
+        // bdyShowSlides();
+
+        // function showSlides(){
+        //     let k;
+        //     let bdySlides = document.getElementsByClassName("bdy-Slides");
+        //     let bdyDots = document.getElementsByClassName("bdy-dot");
+
+        //     for (k = 0; k < slides.length; k++) {
+        //     bdySlides[k].style.display = "none";    
+        //     }
+        //     bdyIndex++;
+        //     if (bdyIndex > slides.length) {bdyIndex = 1} 
+        //     for (k = 0; k < bdyDots.length; k++) {
+        //     bdyDots[k].className = bdyDots[k].className.replace(" active", "");
+        //     }
+        //     bdySlides[bdyIndex-1].style.display = "block";  
+        //     bdyDots[bdyIndex-1].className += " active";
+        //     setTimeout(showSlides, 3000);
+        // }
+
+
+        // manual scroll
+        let manualSlideIndex = 1;
+        mShowSlides(manualSlideIndex);
+        
+
+        function plusSlides(n) {
+            mShowSlides(manualSlideIndex += n);
+        }
+
+        function currentSlide(n) {
+            mShowSlides(manualSlideIndex = n);
+        }
+
+        function mShowSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {manualSlideIndex = 1}       
+            if (n < 1) {manualSlideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[manualSlideIndex-1].style.display = "block";  
+            dots[manualSlideIndex-1].className += " active";
+            
+        }
+
+
+        // manual scroll birthday
+        // let manualBdyIndex = 1;
+        // mBdyShowSlides(manualBdyIndex);
+
+        // function bdyPlusSlides(m) {
+        //     mShowSlides(manualSlideIndex += m);
+        // }
+
+        // function bdyCurrentSlide(m) {
+        //     mShowSlides(manualSlideIndex = m);
+        // }
+
+        // function mBdyShowSlides(m) {
+        //     let j;
+        //     let bdySlides = document.getElementsByClassName("bdy-Slides");
+        //     let bdyDots = document.getElementsByClassName("bdy-dot");
+        //     if (n > slides.length) {manualBdyIndex = 1} 
+        //     if (n < 1) {manualBdyIndex = slides.length}
+
+        //     for (j = 0; j < slides.length; j++) {
+        //         bdySlides[j].style.display = "none";  
+        //     }
+        //     for (j = 0; j < dots.length; j++) {
+        //         bdyDots[j].className = dots[j].className.replace(" active", "");
+        //     }
+        //     bdySlides[manualBdyIndex-1].style.display = "block";  
+        //     bdyDots[manualBdyIndex-1].className += " active";
+        // }
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
