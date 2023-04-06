@@ -163,7 +163,7 @@ a:visited{
 .card{
     border-radius: 0.9rem;
     box-shadow: #aaaaaade 0px 0px 2px 2px;
-    overflow: hidden;
+/*     overflow: hidden; */
     transition: all 0.3s;
     transition-timing-function: ease-in;
     position: relative;
